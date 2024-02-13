@@ -17,7 +17,6 @@ import { formatCurrency } from "../../utils/helpers";
 import { useBookingupdate } from "../bookings/useBookingupdate";
 import { useSettings } from "../settings/useSettings";
 import { useBookingupdateout } from "../bookings/useBookingscheckout";
-import { useDeletebooking } from "../bookings/useDeletebooking";
 
 const Box = styled.div`
   /* Box */
@@ -34,7 +33,6 @@ function CheckinBooking() {
   const {setting,isLoading:settingloading}=useSettings()
   const {bookingdata,isLoading}=useBookingsdata();
   const {checkin,isCheckingin}=useBookingupdate()
-  const {deletebooking,islodaingdelete}=useDeletebooking()
   
   
   
