@@ -1,6 +1,6 @@
 import { updateSetting } from '../../services/apiSettings';
 import Form from '../../ui/Form';
-import Formrow from '../../ui/Formrow';
+import Formrow from '../../ui/Uormrow';
 import Input from '../../ui/Input';
 import Spinner from '../../ui/Spinner'
 import { useEdit } from './EditSetting';

@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import Button from "../../ui/Button";
 import Form from "../../ui/Form";
-import FormRow from "../../ui/FormRow";
+import FormRow from "../../ui/Uormrow";
 import Input from "../../ui/Input";
 import { useSignup } from "./useSignup";
 
@@ -29,11 +29,11 @@ function error(err){
       </FormRow>
 
       <FormRow lable="Email address" error={errors?.email?.message}>
-        <Input type="email" id="email" defaultValue="" {...register("email",{required:"This is the requred field",pattern:{value:/\S+@\S+\.\S+/,message:'provide an valid email address'}})}/>
+        <Input type="email" id="email" {...register("email",{required:"This is the requred field",pattern:{value:/\S+@\S+\.\S+/,message:'provide an valid email address'}})}/>
       </FormRow>
 
       <FormRow lable="Password (min 8 characters)" error={errors?.password?.message}>
-        <Input type="password" id="password"defaultValue=""  {...register("password",{required:"This is the requred field",minLength:{value:8,message:"password required minimum 8 characters"}})}/>
+        <Input type="password" id="password" {...register("password",{required:"This is the requred field",minLength:{value:8,message:"password required minimum 8 characters"}})}/>
       </FormRow>
 
       <FormRow lable="Repeat password" error={errors?.passwordConfirm?.message}>
