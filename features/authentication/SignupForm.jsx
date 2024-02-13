@@ -33,7 +33,7 @@ function error(err){
       </FormRow>
 
       <FormRow lable="Password (min 8 characters)" error={errors?.password?.message}>
-        <Input type="password" id="password" {...register("password",{required:"This is the requred field",minLength:{value:8,message:"password required minimum 8 characters"}})}/>
+        <Input type="password" id="password"defaultValue=""  {...register("password",{required:"This is the requred field",minLength:{value:8,message:"password required minimum 8 characters"}})}/>
       </FormRow>
 
       <FormRow lable="Repeat password" error={errors?.passwordConfirm?.message}>

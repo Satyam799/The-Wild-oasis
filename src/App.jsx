@@ -13,7 +13,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import { Toaster } from "react-hot-toast"
 import Booking from "../pages/Booking"
-import Checkin from "../features/check-in-out/checkin"
+import Checkin from "../features/check-in-out/Checkin"
 import Protucted from "../features/authentication/Protucted"
 import { Darkmodeprovider } from "./context/Darkmode"
 
